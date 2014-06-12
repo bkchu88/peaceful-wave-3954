@@ -12,16 +12,8 @@ var bodyParser = require('body-parser');
 
 var mongo = require( 'mongoskin' );
 
-var mongoUri = process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL ||
-  'mongodb://localhost/mydb';
-
-mongo.Db.connect(mongoUri, function (err, db) {
-  db.collection('mydocs', function(er, collection) {
-    collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {
-    });
-  });
-});
+var mongoUri = process.env.MONGOLAB_URI;
+var db = mongo.db( mongoUri );
 
 
 var routes = require('./routes/index');
