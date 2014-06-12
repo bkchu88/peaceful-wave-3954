@@ -1,0 +1,177 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+#MainHeader{
+position:relative;
+
+
+}
+
+#CarPage{
+position:absolute;
+
+top:0;left:0;
+
+width 300px;
+}
+
+#MainPage {
+
+	position:relative;
+}
+
+
+input.date{
+width:50px;
+}
+input.general{
+width:186px;
+}
+thead.center{
+text-align:center;
+}
+
+#userList {
+	margin:0 0 30px 0;
+}
+	#userList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#userList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#userList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#userList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+table.center {
+   	width:100%; 
+	position:absolute;
+	top:0; left:0;
+  }
+
+table.center2 {
+   	width:100%; 
+	position:absolute;
+	top:30; left:0;
+  }
+
+td.center{
+	text-align:center;
+}
+
+#Menu {
+
+	margin:0 0 20px 0;
+}
+	#Menu table {
+		border-collapse:separate;
+		border-spacing:0px;
+		background:#CCC;
+	}
+		#Menu table th {
+			background:#EEE;
+			font-size: 20px;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#Menu table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#Menu table td {
+				background:#FFF;
+				padding:10px 10px;
+				text-align:center;
+			}
+#RecordsTable {
+
+	margin:0 0 30px 0;
+}
+
+
+#userInfo {
+	width:250px;
+	position:absolute;
+	top:0; left:0;
+}
+	#userInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+/* for table sorter tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
