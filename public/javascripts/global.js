@@ -270,35 +270,8 @@ function AltLog6(){
 }
 
 
-function LogInScreen(){
-    $('#MainPage').html('');
-    var loginContent = '';
-    loginContent += '<h1>Hello World</h1>'
-    loginContent += '<form role="form">';
-    loginContent += '<div class= "form-group">'
-    loginContent += '<label for="inputUsername">Username</label>'
-    loginContent += '<input type="text" class="form-control" id="inputUsername" placeholder= "Enter username">'
-    loginContent += '</div>'
-    loginContent += '<div class= "form-group">'
-    loginContent += '<label for="inputPassword">Password</label>'
-    loginContent += '<input type="text" class="form-control" id="inputPassword" placeholder= "Enter password">'
-    loginContent += '</div>'
-    loginContent += '<div class= "checkbox">'
-    loginContent += '<div class= "form-group>'
-    loginContent += '<div class= "col-sm-offset-2 col-sm-10">'
-    loginContent += '<button type ="submit" id="btnLogin" class="btn btn-default">Sign in </button>'
-    loginContent += '</div>'
-    loginContent += '</div>'
-    loginContent += '</form>'
-
-    $('#MainPage').html(loginContent);
-
-    $('#btnLogin').on('click',AuthenticateUser);
-}
-
-
-
 function PopulateMenu(){
+    $('#MainPage').html('');
     var popMenu = '';
 
     popMenu += '<table class="center">'
