@@ -6,9 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // Database
-
-var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/gasrecord", {native_parser:true});
+//Backup
+//var mongo = require('mongoskin');
+//var db = mongo.db("mongodb://localhost:27017/gasrecord", {native_parser:true});
+var connect = require( 'connect' );
+var mongo = require( 'mongoskin' );
+var port = process.env.PORT || 3000;
+var mongoUri = process.env.MONGOLAB_URI;
+var db = mongo.db( mongoUri );
 
 
 var routes = require('./routes/index');
