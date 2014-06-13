@@ -274,6 +274,18 @@ function PopulateMenu(){
     $('#MainPage').html('');
     var popMenu = '';
 
+/*    popMenu += '<nav class="navbar navbar-default" role="navigation">'
+    popMenu += '   <div>'
+    popMenu += '      <ul class="nav navbar-nav">'
+    popMenu += '         <li><a href="#" class="linkaddrecord">Add Record</a></li>'
+    popMenu += '         <li><a href="#" class="linkviewrecords">Records</a></li>'
+    popMenu += '         <li><a href="#" class="linkaddcar">Add Car</a></li>'
+    popMenu += '         <li><a href="#" class="linkviewcars">Cars</a></li>'
+    popMenu += '      </ul>'
+    popMenu += '   </div>'
+    popMenu += '</nav>'*/
+
+
     popMenu += '<table class="center">'
     popMenu += '<thead>'
     popMenu += '</thead>'
@@ -286,6 +298,7 @@ function PopulateMenu(){
     popMenu += '</tr>'
     popMenu += '</tbody>'
     popMenu += '</table>'
+    
     $('#Menu').html(popMenu);
 
     $('#Menu table tbody').on('click','td a.linkaddrecord', NewRecord);
@@ -415,8 +428,10 @@ function ViewCars(){
 }
 
 function NewCar(){
-    var todaysdate = new Date();
+
     var addCarContent = '';
+
+
     $('#MainPage').html('');
 
     addCarContent += '<h3>Add Car</h3>'
@@ -469,7 +484,7 @@ function NewCar(){
 
     $('#MainPage').html(addCarContent);
     $('#MainHeader').html('');
-    $('#MainPage input#inputCarYear').val() = todaysdate.getYear();
+
     StartListeners();
 
 }
@@ -653,7 +668,7 @@ function NewRecord(){
     //Empty content string
     console.log('new record');
     var addContent = '';
-    var todaysdate = new Date();
+    var today = new Date();
     $('#MainPage').html('');
 
     $.getJSON('/server/cars', function( data ){
@@ -724,9 +739,9 @@ function NewRecord(){
 
         $('#MainPage').html(addContent);
         $('#MainHeader').html('');
-        $('#MainPage input#inputMonth').val() = todaysdate.getMonth();
-        $('#MainPage input#inputDay').val() = todaysdate.getDate();
-        $('#MainPage input#inputYear').val() = todaysdate.getYear();
+        $('#MainPage table input#inputYear').val(today.getFullYear());
+        $('#MainPage table input#inputMonth').val(today.getMonth());
+        $('#MainPage table input#inputDay').val(today.getDate());
         StartListeners();
     });
 
