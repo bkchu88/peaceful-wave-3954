@@ -18,19 +18,19 @@ function AltLog1(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="0test1" type="button" class="btn btn-danger">1</button></td>'
-    AlternateContent += '<td><button id="0test2" type="button" class="btn btn-success">2</button></td>'
-    AlternateContent += '<td><button id="0test3" type="button" class="btn btn-primary">3</button></td>'
+    AlternateContent += '<td><button id="0test1" type="button" class="btn btn-lg btn-danger">1</button></td>'
+    AlternateContent += '<td><button id="0test2" type="button" class="btn btn-lg btn-success">2</button></td>'
+    AlternateContent += '<td><button id="0test3" type="button" class="btn btn-lg btn-primary">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="0test4" type="button" class="btn btn-primary">4</button></td>'
-    AlternateContent += '<td><button id="0test5" type="button" class="btn btn-warning">5</button></td>'
-    AlternateContent += '<td><button id="0test6" type="button" class="btn btn-danger">6</button></td>'
+    AlternateContent += '<td><button id="0test4" type="button" class="btn btn-lg btn-primary">4</button></td>'
+    AlternateContent += '<td><button id="0test5" type="button" class="btn btn-lg btn-warning">5</button></td>'
+    AlternateContent += '<td><button id="0test6" type="button" class="btn btn-lg btn-danger">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="0test7" type="button" class="btn btn-success">7</button></td>'
-    AlternateContent += '<td><button id="0test8" type="button" class="btn btn-danger">8</button></td>'
-    AlternateContent += '<td><button id="0test9" type="button" class="btn btn-primary">9</button></td>'
+    AlternateContent += '<td><button id="0test7" type="button" class="btn btn-lg btn-success">7</button></td>'
+    AlternateContent += '<td><button id="0test8" type="button" class="btn btn-lg btn-danger">8</button></td>'
+    AlternateContent += '<td><button id="0test9" type="button" class="btn btn-lg btn-primary">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -56,19 +56,19 @@ function AltLog(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="1test1" type="button" class="btn btn-primary">1</button></td>'
-    AlternateContent += '<td><button id="1test2" type="button" class="btn btn-primary">2</button></td>'
-    AlternateContent += '<td><button id="1test3" type="button" class="btn btn-primary">3</button></td>'
+    AlternateContent += '<td><button id="1test1" type="button" class="btn btn-lg btn-primary">1</button></td>'
+    AlternateContent += '<td><button id="1test2" type="button" class="btn btn-lg btn-primary">2</button></td>'
+    AlternateContent += '<td><button id="1test3" type="button" class="btn btn-lg btn-primary">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="1test4" type="button" class="btn btn-primary">4</button></td>'
-    AlternateContent += '<td><button id="1test5" type="button" class="btn btn-primary">5</button></td>'
-    AlternateContent += '<td><button id="1test6" type="button" class="btn btn-primary">6</button></td>'
+    AlternateContent += '<td><button id="1test4" type="button" class="btn btn-lg btn-primary">4</button></td>'
+    AlternateContent += '<td><button id="1test5" type="button" class="btn btn-lg btn-primary">5</button></td>'
+    AlternateContent += '<td><button id="1test6" type="button" class="btn btn-lg btn-primary">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="1test7" type="button" class="btn btn-primary">7</button></td>'
-    AlternateContent += '<td><button id="1test8" type="button" class="btn btn-primary">8</button></td>'
-    AlternateContent += '<td><button id="1test9" type="button" class="btn btn-primary">9</button></td>'
+    AlternateContent += '<td><button id="1test7" type="button" class="btn btn-lg btn-primary">7</button></td>'
+    AlternateContent += '<td><button id="1test8" type="button" class="btn btn-lg btn-primary">8</button></td>'
+    AlternateContent += '<td><button id="1test9" type="button" class="btn btn-lg btn-primary">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -93,19 +93,19 @@ function AltLog2(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="2test1" type="button" class="btn btn-warning">1</button></td>'
-    AlternateContent += '<td><button id="2test2" type="button" class="btn btn-warning">2</button></td>'
-    AlternateContent += '<td><button id="2test3" type="button" class="btn btn-warning">3</button></td>'
+    AlternateContent += '<td><button id="2test1" type="button" class="btn btn-lg btn-warning">1</button></td>'
+    AlternateContent += '<td><button id="2test2" type="button" class="btn btn-lg btn-warning">2</button></td>'
+    AlternateContent += '<td><button id="2test3" type="button" class="btn btn-lg btn-warning">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="2test4" type="button" class="btn btn-warning">4</button></td>'
-    AlternateContent += '<td><button id="2test5" type="button" class="btn btn-warning">5</button></td>'
-    AlternateContent += '<td><button id="2test6" type="button" class="btn btn-warning">6</button></td>'
+    AlternateContent += '<td><button id="2test4" type="button" class="btn btn-lg btn-warning">4</button></td>'
+    AlternateContent += '<td><button id="2test5" type="button" class="btn btn-lg btn-warning">5</button></td>'
+    AlternateContent += '<td><button id="2test6" type="button" class="btn btn-lg btn-warning">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="2test7" type="button" class="btn btn-warning">7</button></td>'
-    AlternateContent += '<td><button id="2test8" type="button" class="btn btn-warning">8</button></td>'
-    AlternateContent += '<td><button id="2test9" type="button" class="btn btn-warning">9</button></td>'
+    AlternateContent += '<td><button id="2test7" type="button" class="btn btn-lg btn-warning">7</button></td>'
+    AlternateContent += '<td><button id="2test8" type="button" class="btn btn-lg btn-warning">8</button></td>'
+    AlternateContent += '<td><button id="2test9" type="button" class="btn btn-lg btn-warning">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -130,19 +130,19 @@ function AltLog3(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="3test1" type="button" class="btn btn-success">1</button></td>'
-    AlternateContent += '<td><button id="3test2" type="button" class="btn btn-success">2</button></td>'
-    AlternateContent += '<td><button id="3test3" type="button" class="btn btn-success">3</button></td>'
+    AlternateContent += '<td><button id="3test1" type="button" class="btn btn-lg btn-success">1</button></td>'
+    AlternateContent += '<td><button id="3test2" type="button" class="btn btn-lg btn-success">2</button></td>'
+    AlternateContent += '<td><button id="3test3" type="button" class="btn btn-lg btn-success">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="3test4" type="button" class="btn btn-success">4</button></td>'
-    AlternateContent += '<td><button id="3test5" type="button" class="btn btn-success">5</button></td>'
-    AlternateContent += '<td><button id="3test6" type="button" class="btn btn-success">6</button></td>'
+    AlternateContent += '<td><button id="3test4" type="button" class="btn btn-lg btn-success">4</button></td>'
+    AlternateContent += '<td><button id="3test5" type="button" class="btn btn-lg btn-success">5</button></td>'
+    AlternateContent += '<td><button id="3test6" type="button" class="btn btn-lg btn-success">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="3test7" type="button" class="btn btn-success">7</button></td>'
-    AlternateContent += '<td><button id="3test8" type="button" class="btn btn-success">8</button></td>'
-    AlternateContent += '<td><button id="3test9" type="button" class="btn btn-success">9</button></td>'
+    AlternateContent += '<td><button id="3test7" type="button" class="btn btn-lg btn-success">7</button></td>'
+    AlternateContent += '<td><button id="3test8" type="button" class="btn btn-lg btn-success">8</button></td>'
+    AlternateContent += '<td><button id="3test9" type="button" class="btn btn-lg btn-success">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -167,19 +167,19 @@ function AltLog4(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="4test1" type="button" class="btn btn-danger">1</button></td>'
-    AlternateContent += '<td><button id="4test2" type="button" class="btn btn-danger">2</button></td>'
-    AlternateContent += '<td><button id="4test3" type="button" class="btn btn-danger">3</button></td>'
+    AlternateContent += '<td><button id="4test1" type="button" class="btn btn-lg btn-danger">1</button></td>'
+    AlternateContent += '<td><button id="4test2" type="button" class="btn btn-lg btn-danger">2</button></td>'
+    AlternateContent += '<td><button id="4test3" type="button" class="btn btn-lg btn-danger">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="4test4" type="button" class="btn btn-danger">4</button></td>'
-    AlternateContent += '<td><button id="4test5" type="button" class="btn btn-danger">5</button></td>'
-    AlternateContent += '<td><button id="4test6" type="button" class="btn btn-danger">6</button></td>'
+    AlternateContent += '<td><button id="4test4" type="button" class="btn btn-lg btn-danger">4</button></td>'
+    AlternateContent += '<td><button id="4test5" type="button" class="btn btn-lg btn-danger">5</button></td>'
+    AlternateContent += '<td><button id="4test6" type="button" class="btn btn-lg btn-danger">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="4test7" type="button" class="btn btn-danger">7</button></td>'
-    AlternateContent += '<td><button id="4test8" type="button" class="btn btn-danger">8</button></td>'
-    AlternateContent += '<td><button id="4test9" type="button" class="btn btn-danger">9</button></td>'
+    AlternateContent += '<td><button id="4test7" type="button" class="btn btn-lg btn-danger">7</button></td>'
+    AlternateContent += '<td><button id="4test8" type="button" class="btn btn-lg btn-danger">8</button></td>'
+    AlternateContent += '<td><button id="4test9" type="button" class="btn btn-lg btn-danger">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -203,19 +203,19 @@ function AltLog5(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="5test1" type="button" class="btn btn-info">1</button></td>'
-    AlternateContent += '<td><button id="5test2" type="button" class="btn btn-info">2</button></td>'
-    AlternateContent += '<td><button id="5test3" type="button" class="btn btn-info">3</button></td>'
+    AlternateContent += '<td><button id="5test1" type="button" class="btn btn-lg btn-info">1</button></td>'
+    AlternateContent += '<td><button id="5test2" type="button" class="btn btn-lg btn-info">2</button></td>'
+    AlternateContent += '<td><button id="5test3" type="button" class="btn btn-lg btn-info">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="5test4" type="button" class="btn btn-info">4</button></td>'
-    AlternateContent += '<td><button id="5test5" type="button" class="btn btn-info">5</button></td>'
-    AlternateContent += '<td><button id="5test6" type="button" class="btn btn-info">6</button></td>'
+    AlternateContent += '<td><button id="5test4" type="button" class="btn btn-lg btn-info">4</button></td>'
+    AlternateContent += '<td><button id="5test5" type="button" class="btn btn-lg btn-info">5</button></td>'
+    AlternateContent += '<td><button id="5test6" type="button" class="btn btn-lg btn-info">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="5test7" type="button" class="btn btn-info">7</button></td>'
-    AlternateContent += '<td><button id="5test8" type="button" class="btn btn-info">8</button></td>'
-    AlternateContent += '<td><button id="5test9" type="button" class="btn btn-info">9</button></td>'
+    AlternateContent += '<td><button id="5test7" type="button" class="btn btn-lg btn-info">7</button></td>'
+    AlternateContent += '<td><button id="5test8" type="button" class="btn btn-lg btn-info">8</button></td>'
+    AlternateContent += '<td><button id="5test9" type="button" class="btn btn-lg btn-info">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -240,19 +240,19 @@ function AltLog6(){
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="6test1" type="button" class="btn btn-default">1</button></td>'
-    AlternateContent += '<td><button id="6test2" type="button" class="btn btn-default">2</button></td>'
-    AlternateContent += '<td><button id="6test3" type="button" class="btn btn-default">3</button></td>'
+    AlternateContent += '<td><button id="6test1" type="button" class="btn btn-lg btn-default">1</button></td>'
+    AlternateContent += '<td><button id="6test2" type="button" class="btn btn-lg btn-default">2</button></td>'
+    AlternateContent += '<td><button id="6test3" type="button" class="btn btn-lg btn-default">3</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="6test4" type="button" class="btn btn-default">4</button></td>'
-    AlternateContent += '<td><button id="6test5" type="button" class="btn btn-default">5</button></td>'
-    AlternateContent += '<td><button id="6test6" type="button" class="btn btn-default">6</button></td>'
+    AlternateContent += '<td><button id="6test4" type="button" class="btn btn-lg btn-default">4</button></td>'
+    AlternateContent += '<td><button id="6test5" type="button" class="btn btn-lg btn-default">5</button></td>'
+    AlternateContent += '<td><button id="6test6" type="button" class="btn btn-lg btn-default">6</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '<tr>'
-    AlternateContent += '<td><button id="6test7" type="button" class="btn btn-default">7</button></td>'
-    AlternateContent += '<td><button id="6test8" type="button" class="btn btn-default">8</button></td>'
-    AlternateContent += '<td><button id="6test9" type="button" class="btn btn-default">9</button></td>'
+    AlternateContent += '<td><button id="6test7" type="button" class="btn btn-lg btn-default">7</button></td>'
+    AlternateContent += '<td><button id="6test8" type="button" class="btn btn-lg btn-default">8</button></td>'
+    AlternateContent += '<td><button id="6test9" type="button" class="btn btn-lg btn-default">9</button></td>'
     AlternateContent += '</tr>'
     AlternateContent += '</table>'
 
@@ -415,7 +415,7 @@ function ViewCars(){
 }
 
 function NewCar(){
-
+    var todaysdate = new Date();
     var addCarContent = '';
     $('#MainPage').html('');
 
@@ -439,7 +439,7 @@ function NewCar(){
     addCarContent += '<tr>'
     addCarContent += '<td><label class="control-label">Year</label></td>'
     addCarContent += '<td>'
-    addCarContent += '<input class= "form-control" id= "inputCarYear" type= "text" placeholder= "Year"></input>'
+    addCarContent += '<input class= "form-control" id= "inputCarYear" type= "number" placeholder= "Year"></input>'
     addCarContent += '</td>'
     addCarContent += '</tr>'
     addCarContent += '<tr>'
@@ -469,6 +469,7 @@ function NewCar(){
 
     $('#MainPage').html(addCarContent);
     $('#MainHeader').html('');
+    $('#MainPage input#inputCarYear').val() = todaysdate.getYear();
     StartListeners();
 
 }
@@ -652,6 +653,7 @@ function NewRecord(){
     //Empty content string
     console.log('new record');
     var addContent = '';
+    var todaysdate = new Date();
     $('#MainPage').html('');
 
     $.getJSON('/server/cars', function( data ){
@@ -695,23 +697,23 @@ function NewRecord(){
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><label class="control-label">Price</label></td>'
-        addContent += '<td><input class="form-control" id="inputPrice" type = "text" placeholder="Price"> </input></td>'
+        addContent += '<td><input class="form-control" id="inputPrice" type = "number" placeholder="Price"> </input></td>'
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><label class="control-label">Trip Mileage</label></td>'
-        addContent += '<td><input class="form-control" id="inputTripMileage" type="text" placeholder="Trip Mileage"> </input></td>';
+        addContent += '<td><input class="form-control" id="inputTripMileage" type="number" placeholder="Trip Mileage"> </input></td>';
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><label class="control-label">Total Mileage &nbsp;</label></td>'
-        addContent += '<td><input class="form-control" id="inputTotalMileage" type="text" placeholder="Total Mileage"> </input></td>';
+        addContent += '<td><input class="form-control" id="inputTotalMileage" type="number" placeholder="Total Mileage"> </input></td>';
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><label class="control-label">Gallons</label></td>'
-        addContent += '<td><input class="form-control" id="inputGallons" type="text" placeholder="# of Gallons"> </input></td>';
+        addContent += '<td><input class="form-control" id="inputGallons" type="number" placeholder="# of Gallons"> </input></td>';
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><label class="control-label">Total Cost</label></td>'
-        addContent += '<td><input class="form-control" id="inputCost" type="text" placeholder="Total Cost"> </input></td>';
+        addContent += '<td><input class="form-control" id="inputCost" type="number" placeholder="Total Cost"> </input></td>';
         addContent += '</tr>'
         addContent += '<tr>'
         addContent += '<td><button class="btn btn-primary btn-sm" type="submit" id="btnAddRecord"> Submit </button></td>'
@@ -722,6 +724,9 @@ function NewRecord(){
 
         $('#MainPage').html(addContent);
         $('#MainHeader').html('');
+        $('#MainPage input#inputMonth').val() = todaysdate.getMonth();
+        $('#MainPage input#inputDay').val() = todaysdate.getDate();
+        $('#MainPage input#inputYear').val() = todaysdate.getYear();
         StartListeners();
     });
 
