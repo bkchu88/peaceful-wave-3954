@@ -740,7 +740,7 @@ function NewRecord(){
         $('#MainPage').html(addContent);
         $('#MainHeader').html('');
         $('#MainPage table input#inputYear').val(today.getFullYear());
-        $('#MainPage table input#inputMonth').val(today.getMonth());
+        $('#MainPage table input#inputMonth').val(today.getMonth() + 1);
         $('#MainPage table input#inputDay').val(today.getDate());
         StartListeners();
     });
