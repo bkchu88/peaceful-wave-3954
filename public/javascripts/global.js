@@ -51,7 +51,7 @@ function AltLog(){
     $('#MainPage').html('');
     var AlternateContent = '';
 
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'

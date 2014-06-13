@@ -88,6 +88,10 @@ td.center{
 	text-align:center;
 }
 
+table.inner{
+	margin: 0 auto;
+}
+
 
 #Menu {
 
