@@ -88,7 +88,7 @@ function AltLog(){
 function AltLog2(){
     $('#MainPage').html('');
     var AlternateContent = '';
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
@@ -125,7 +125,7 @@ function AltLog2(){
 function AltLog3(){
     $('#MainPage').html('');
     var AlternateContent = '';
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
@@ -162,7 +162,7 @@ function AltLog3(){
 function AltLog4(){
     $('#MainPage').html('');
     var AlternateContent = '';
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
@@ -198,7 +198,7 @@ function AltLog4(){
 function AltLog5(){
     $('#MainPage').html('');
     var AlternateContent = '';
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
@@ -235,7 +235,7 @@ function AltLog5(){
 function AltLog6(){
     $('#MainPage').html('');
     var AlternateContent = '';
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
