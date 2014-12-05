@@ -13,7 +13,7 @@ function AltLog1(){
      $('#MainPage').html('');
     var AlternateContent = '';
 
-    AlternateContent += '<table>'
+    AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
     AlternateContent += '<tbody>'
@@ -185,7 +185,7 @@ function AltLog4(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#4test6').on('click', AltLog5);
+    $('#4test6').on('click', PopulateMenu);
     $('#4test1').on('click', AltLog1);
     $('#4test2').on('click', AltLog1);
     $('#4test3').on('click', AltLog1);
