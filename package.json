@@ -12,7 +12,7 @@
     "express": "^4.0.0",
     "jade": "*",
     "logfmt": "^1.1.2",
-    "mongodb": "^2.0.14",
+    "mongodb": "^2.0.45",
     "mongoskin": "*",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0"
