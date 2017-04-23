@@ -1,9 +1,27 @@
 #!/usr/bin/env node
-var debug = require('debug')('gasrecord');
 var app = require('../app');
+var mongodb = require("mongodb");
 
-app.set('port', process.env.PORT || 3000);
+// FOR LOCAL DB
+//var mongoUri = "mongodb://localhost:27017/gasrecord";
 
-var server = app.listen(app.get('port'), function() {
-  debug('Express server listening on port ' + server.address().port);
+// FOR LIVE PRODUCTION
+var mongoUri = process.env.MONGOLAB_URI;
+
+
+mongodb.MongoClient.connect(mongoUri, function (err, database) {
+    if (err) {
+        console.log(err);
+        process.exit(1);
+    }
+
+    // Save database object from the callback for reuse.
+    db = database;
+    console.log("Database connection ready");
+
+    // Initialize the app.
+    var server = app.listen(process.env.PORT || 3000, function () {
+        var port = server.address().port;
+        console.log("App now running on port", port);
+    });
 });
