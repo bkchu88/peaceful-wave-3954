@@ -11,7 +11,7 @@
     "express": "^4.0.0",
     "jade": "*",
     "logfmt": "^1.1.2",
-    "mongodb": "^3.6.0",
+    "mongodb": "^3.6.3",
     "morgan": ">=1.9.1",
     "static-favicon": "~1.0.0"
   },
