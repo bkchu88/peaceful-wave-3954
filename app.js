@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+const mongoClient = require('./mongoClient');
+mongoClient.connect();
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -45,17 +47,14 @@ if (app.get('env') === 'development') {
             message: err.message,
             error: err
         });
+        console.log(err);
     });
 }
 
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+// Initialize the app.
+var server = app.listen(process.env.PORT || 3000, function () {
+    var port = server.address().port;
+    console.log("App now running on port", port);
 });
 
 
