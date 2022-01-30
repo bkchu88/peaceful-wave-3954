@@ -1,3 +1,5 @@
+
+
 var userGasRecords = [];
 var UserPin = '';
 
@@ -199,12 +201,20 @@ function AltLog4(InProgress){
     $('#4test9').on('click', ValidateLog(InProgress+"9"));
 }
 function ValidateLog(InProgress){
-    if (InProgress == secretPin) {
-        PopulateMenu();
-    }
-    else{
-        AltLog1()
-    }
+    $.ajax({
+        type: 'POST',
+        data: InProgress,
+        url: '/server/validatepin',
+        dataType: 'JSON'
+    }).done(function( response ){
+        if (response.msg === true) {
+            PopulateMenu();
+        }
+        else {
+            AltLog1();
+        }
+    });
+
 }
 
 function AltLog5(){
