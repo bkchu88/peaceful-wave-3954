@@ -279,7 +279,7 @@ function AltLog4(InProgress){
 function ValidateLog(pin){
     $.ajax({
         type: 'POST',
-        data: pin,
+        data: {data: pin},
         url: '/server/validatepin',
         dataType: 'JSON'
     }).done(function( response ){

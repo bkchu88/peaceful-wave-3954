@@ -19,7 +19,7 @@ router.get('/records', function(req, res) {
 
 router.post('/validatepin', function(req, res) {
 	console.log(secretPin, '<-- pin, body: ', req.body);
-    if (req.body == secretPin) {
+    if (req.body.data == secretPin) {
         res.send({msg:true});
     }
     else{
