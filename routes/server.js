@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var secretPin = process.env.SECRET_PIN;
 const mongoClient = require('../mongoClient');
 
 /* GET records */
@@ -12,6 +13,17 @@ router.get('/records', function(req, res) {
         }
         res.json(items);
     });
+});
+
+/* VALIDATE PIN */
+
+router.post('/validatepin', function(req, res) {
+    if (req.body.data == secretPin) {
+        res.send({msg:true});
+    }
+    else{
+        res.send({msg:false});
+    }
 });
 
 

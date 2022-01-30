@@ -7,7 +7,6 @@ var mongodb = require("mongodb");
 // FOR LIVE PRODUCTION
 var mongoUri = process.env.MONGOLAB_URI;
 var dbName = process.env.DB_NAME;
-var secretPin = process.env.SECRET_PIN;
 var db;
 var initialized = false;
 
