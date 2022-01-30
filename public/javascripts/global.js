@@ -5,7 +5,7 @@ var UserPin = '';
 
 $(function(){
    // DOM Ready - do your stuff 
-       AltLog();
+       RenderButtons();
 
     //PopulateMenu();
 });
@@ -51,6 +51,80 @@ function AltLog1(){
     $('#0test9').on('click', AltLog2("9"));
 }
 
+
+function RenderButtons(){
+    $('#MainPage').html('');
+    UserPin = '';
+    var AlternateContent = '';
+
+    AlternateContent += '<table class= "inner">'
+    AlternateContent += '<thead>'
+    AlternateContent += '</thead>'
+    AlternateContent += '<tbody>'
+    AlternateContent += '<tr>'
+    AlternateContent += '<td><button id="1test1" type="button" class="btn btn-lg btn-primary">1</button></td>'
+    AlternateContent += '<td><button id="1test2" type="button" class="btn btn-lg btn-primary">2</button></td>'
+    AlternateContent += '<td><button id="1test3" type="button" class="btn btn-lg btn-primary">3</button></td>'
+    AlternateContent += '</tr>'
+    AlternateContent += '<tr>'
+    AlternateContent += '<td><button id="1test4" type="button" class="btn btn-lg btn-primary">4</button></td>'
+    AlternateContent += '<td><button id="1test5" type="button" class="btn btn-lg btn-primary">5</button></td>'
+    AlternateContent += '<td><button id="1test6" type="button" class="btn btn-lg btn-primary">6</button></td>'
+    AlternateContent += '</tr>'
+    AlternateContent += '<tr>'
+    AlternateContent += '<td><button id="1test7" type="button" class="btn btn-lg btn-primary">7</button></td>'
+    AlternateContent += '<td><button id="1test8" type="button" class="btn btn-lg btn-primary">8</button></td>'
+    AlternateContent += '<td><button id="1test9" type="button" class="btn btn-lg btn-primary">9</button></td>'
+    AlternateContent += '</tr>'
+    AlternateContent += '</table>'
+
+    $('#MainPage').html(AlternateContent);
+
+    $('#1test1').on('click', AltLog2("1"));
+    $('#1test2').on('click', AltLog2("2"));
+    $('#1test3').on('click', AltLog2("3"));
+    $('#1test4').on('click', AltLog2("4"));
+    $('#1test5').on('click', AltLog2("5"));
+    $('#1test6').on('click', AltLog2("6"));
+    $('#1test7').on('click', AltLog2("7"));
+    $('#1test8').on('click', AltLog2("8"));
+    $('#1test9').on('click', AltLog2("9"));
+}
+
+function PinButtonClick (val) {
+    UserPin += val;
+    if (UserPin.length >= 4) {
+        ValidateLog(UserPin);
+    }
+
+    // change colors of buttons
+    var colorClass = "btn-primary";
+    if (UserPin.length === 1) {
+        colorClass = "btn-warning";
+    }
+    if (UserPin.length === 2) {
+        colorClass = "btn-success";
+    }
+    if (UserPin.length === 3) {
+        colorClass = "btn-danger";
+    }
+    
+    for(var i = 0; i < 9; i++) {
+        replaceButtonClass('#1test' + i, colorClass);
+    }
+    
+}
+
+function replaceButtonClass(buttonId, newClass) {
+    $(buttonId).removeClass('btn-primary');
+    $(buttonId).removeClass('btn-warning');
+    $(buttonId).removeClass('btn-success');
+    $(buttonId).removeClass('btn-danger');
+    $(buttonId).addClass(newClass);
+}
+
+
+
 function AltLog(){
     $('#MainPage').html('');
     UserPin = '';
@@ -89,6 +163,8 @@ function AltLog(){
     $('#1test8').on('click', AltLog2("8"));
     $('#1test9').on('click', AltLog2("9"));
 }
+
+
 
 function AltLog2(InProgress){
     $('#MainPage').html('');
@@ -211,7 +287,12 @@ function ValidateLog(InProgress){
             PopulateMenu();
         }
         else {
-            AltLog1();
+            // reset UserPin if failed
+            UserPin = '';
+            alert('pin was incorrect!');
+            for(var i = 0; i < 9; i++) {
+                replaceButtonClass('#1test' + i, 'btn-primary');
+            }
         }
     });
 
