@@ -36,10 +36,10 @@ function AltLog1(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#0test5').on('click', AltLog2);
+    $('#0test3').on('click', AltLog2);
     $('#0test1').on('click', AltLog1);
     $('#0test2').on('click', AltLog1);
-    $('#0test3').on('click', AltLog1);
+    $('#0test5').on('click', AltLog1);
     $('#0test4').on('click', AltLog1);
     $('#0test6').on('click', AltLog1);
     $('#0test7').on('click', AltLog1);
@@ -74,10 +74,10 @@ function AltLog(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#1test5').on('click', AltLog2);
+    $('#1test3').on('click', AltLog2);
     $('#1test1').on('click', AltLog1);
     $('#1test2').on('click', AltLog1);
-    $('#1test3').on('click', AltLog1);
+    $('#1test5').on('click', AltLog1);
     $('#1test4').on('click', AltLog1);
     $('#1test6').on('click', AltLog1);
     $('#1test7').on('click', AltLog1);
@@ -148,11 +148,11 @@ function AltLog3(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#3test5').on('click', AltLog4 );
+    $('#3test4').on('click', AltLog4 );
     $('#3test1').on('click', AltLog1 );
     $('#3test2').on('click', AltLog1 );
     $('#3test3').on('click', AltLog1 );
-    $('#3test4').on('click', AltLog1 );
+    $('#3test5').on('click', AltLog1 );
     $('#3test6').on('click', AltLog1 );
     $('#3test7').on('click', AltLog1 );
     $('#3test8').on('click', AltLog1 );
@@ -185,12 +185,12 @@ function AltLog4(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#4test6').on('click', PopulateMenu);
+    $('#4test5').on('click', PopulateMenu);
     $('#4test1').on('click', AltLog1);
     $('#4test2').on('click', AltLog1);
     $('#4test3').on('click', AltLog1);
     $('#4test4').on('click', AltLog1);
-    $('#4test5').on('click', AltLog1);
+    $('#4test6').on('click', AltLog1);
     $('#4test7').on('click', AltLog1);
     $('#4test8').on('click', AltLog1);
     $('#4test9').on('click', AltLog1);
