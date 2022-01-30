@@ -80,15 +80,15 @@ function RenderButtons(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#1test1').on('click', PinButtonClick.bind("1"));
-    $('#1test2').on('click', PinButtonClick.bind("2"));
-    $('#1test3').on('click', PinButtonClick.bind("3"));
-    $('#1test4').on('click', PinButtonClick.bind("4"));
-    $('#1test5').on('click', PinButtonClick.bind("5"));
-    $('#1test6').on('click', PinButtonClick.bind("6"));
-    $('#1test7').on('click', PinButtonClick.bind("7"));
-    $('#1test8').on('click', PinButtonClick.bind("8"));
-    $('#1test9').on('click', PinButtonClick.bind("9"));
+    $('#1test1').on('click', PinButtonClick.bind(this, "1"));
+    $('#1test2').on('click', PinButtonClick.bind(this, "2"));
+    $('#1test3').on('click', PinButtonClick.bind(this, "3"));
+    $('#1test4').on('click', PinButtonClick.bind(this, "4"));
+    $('#1test5').on('click', PinButtonClick.bind(this, "5"));
+    $('#1test6').on('click', PinButtonClick.bind(this, "6"));
+    $('#1test7').on('click', PinButtonClick.bind(this, "7"));
+    $('#1test8').on('click', PinButtonClick.bind(this, "8"));
+    $('#1test9').on('click', PinButtonClick.bind(this, "9"));
 }
 
 function PinButtonClick (val) {
