@@ -80,15 +80,15 @@ function RenderButtons(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#1test1').on('click', AltLog2("1"));
-    $('#1test2').on('click', AltLog2("2"));
-    $('#1test3').on('click', AltLog2("3"));
-    $('#1test4').on('click', AltLog2("4"));
-    $('#1test5').on('click', AltLog2("5"));
-    $('#1test6').on('click', AltLog2("6"));
-    $('#1test7').on('click', AltLog2("7"));
-    $('#1test8').on('click', AltLog2("8"));
-    $('#1test9').on('click', AltLog2("9"));
+    $('#1test1').on('click', PinButtonClick.bind("1"));
+    $('#1test2').on('click', PinButtonClick.bind("2"));
+    $('#1test3').on('click', PinButtonClick.bind("3"));
+    $('#1test4').on('click', PinButtonClick.bind("4"));
+    $('#1test5').on('click', PinButtonClick.bind("5"));
+    $('#1test6').on('click', PinButtonClick.bind("6"));
+    $('#1test7').on('click', PinButtonClick.bind("7"));
+    $('#1test8').on('click', PinButtonClick.bind("8"));
+    $('#1test9').on('click', PinButtonClick.bind("9"));
 }
 
 function PinButtonClick (val) {
