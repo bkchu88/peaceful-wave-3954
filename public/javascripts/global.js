@@ -109,7 +109,7 @@ function PinButtonClick (val) {
         colorClass = "btn-danger";
     }
     
-    for(var i = 0; i < 9; i++) {
+    for(var i = 1; i <= 9; i++) {
         replaceButtonClass('#1test' + i, colorClass);
     }
     
@@ -276,10 +276,10 @@ function AltLog4(InProgress){
     $('#4test8').on('click', ValidateLog(InProgress+"8"));
     $('#4test9').on('click', ValidateLog(InProgress+"9"));
 }
-function ValidateLog(InProgress){
+function ValidateLog(pin){
     $.ajax({
         type: 'POST',
-        data: InProgress,
+        data: pin,
         url: '/server/validatepin',
         dataType: 'JSON'
     }).done(function( response ){
