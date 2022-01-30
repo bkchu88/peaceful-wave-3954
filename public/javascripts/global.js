@@ -1,6 +1,5 @@
 var userGasRecords = [];
 var UserPin = '';
-var secretPin = process.env.SECRET_PIN;
 
 $(function(){
    // DOM Ready - do your stuff 
@@ -200,7 +199,7 @@ function AltLog4(InProgress){
     $('#4test9').on('click', ValidateLog(InProgress+"9"));
 }
 function ValidateLog(InProgress){
-    if (InProgress == SECRET_PIN) {
+    if (InProgress == secretPin) {
         PopulateMenu();
     }
     else{
