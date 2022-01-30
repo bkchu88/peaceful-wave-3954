@@ -1,4 +1,6 @@
 var userGasRecords = [];
+var UserPin = '';
+var secretPin = process.env.SECRET_PIN;
 
 $(function(){
    // DOM Ready - do your stuff 
@@ -10,9 +12,10 @@ $(function(){
 //Functions-----------------------==========------------
 
 function AltLog1(){
-     $('#MainPage').html('');
+    $('#MainPage').html('');
+    UserPin = '';
     var AlternateContent = '';
-
+ 
     AlternateContent += '<table class= "inner">'
     AlternateContent += '<thead>'
     AlternateContent += '</thead>'
@@ -36,19 +39,20 @@ function AltLog1(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#0test3').on('click', AltLog2);
-    $('#0test1').on('click', AltLog1);
-    $('#0test2').on('click', AltLog1);
-    $('#0test5').on('click', AltLog1);
-    $('#0test4').on('click', AltLog1);
-    $('#0test6').on('click', AltLog1);
-    $('#0test7').on('click', AltLog1);
-    $('#0test8').on('click', AltLog1);
-    $('#0test9').on('click', AltLog1);
+    $('#0test1').on('click', AltLog2("1"));
+    $('#0test2').on('click', AltLog2("2"));
+    $('#0test3').on('click', AltLog2("3"));
+    $('#0test4').on('click', AltLog2("4"));
+    $('#0test5').on('click', AltLog2("5"));
+    $('#0test6').on('click', AltLog2("6"));
+    $('#0test7').on('click', AltLog2("7"));
+    $('#0test8').on('click', AltLog2("8"));
+    $('#0test9').on('click', AltLog2("9"));
 }
 
 function AltLog(){
     $('#MainPage').html('');
+    UserPin = '';
     var AlternateContent = '';
 
     AlternateContent += '<table class= "inner">'
@@ -74,18 +78,18 @@ function AltLog(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#1test3').on('click', AltLog2);
-    $('#1test1').on('click', AltLog1);
-    $('#1test2').on('click', AltLog1);
-    $('#1test5').on('click', AltLog1);
-    $('#1test4').on('click', AltLog1);
-    $('#1test6').on('click', AltLog1);
-    $('#1test7').on('click', AltLog1);
-    $('#1test8').on('click', AltLog1);
-    $('#1test9').on('click', AltLog1);
+    $('#1test1').on('click', AltLog2("1"));
+    $('#1test2').on('click', AltLog2("2"));
+    $('#1test3').on('click', AltLog2("3"));
+    $('#1test4').on('click', AltLog2("4"));
+    $('#1test5').on('click', AltLog2("5"));
+    $('#1test6').on('click', AltLog2("6"));
+    $('#1test7').on('click', AltLog2("7"));
+    $('#1test8').on('click', AltLog2("8"));
+    $('#1test9').on('click', AltLog2("9"));
 }
 
-function AltLog2(){
+function AltLog2(InProgress){
     $('#MainPage').html('');
     var AlternateContent = '';
     AlternateContent += '<table class= "inner">'
@@ -111,18 +115,18 @@ function AltLog2(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#2test4').on('click', AltLog3 );
-    $('#2test1').on('click', AltLog1 );
-    $('#2test2').on('click', AltLog1 );
-    $('#2test3').on('click', AltLog1 );
-    $('#2test5').on('click', AltLog1 );
-    $('#2test6').on('click', AltLog1 );
-    $('#2test7').on('click', AltLog1 );
-    $('#2test8').on('click', AltLog1 );
-    $('#2test9').on('click', AltLog1 );
+    $('#2test1').on('click', AltLog3(InProgress+"1") );
+    $('#2test2').on('click', AltLog3(InProgress+"2") );
+    $('#2test3').on('click', AltLog3(InProgress+"3") );
+    $('#2test4').on('click', AltLog3(InProgress+"4") );
+    $('#2test5').on('click', AltLog3(InProgress+"5") );
+    $('#2test6').on('click', AltLog3(InProgress+"6") );
+    $('#2test7').on('click', AltLog3(InProgress+"7") );
+    $('#2test8').on('click', AltLog3(InProgress+"8") );
+    $('#2test9').on('click', AltLog3(InProgress+"9") );
 }
 
-function AltLog3(){
+function AltLog3(InProgress){
     $('#MainPage').html('');
     var AlternateContent = '';
     AlternateContent += '<table class= "inner">'
@@ -148,18 +152,18 @@ function AltLog3(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#3test4').on('click', AltLog4 );
-    $('#3test1').on('click', AltLog1 );
-    $('#3test2').on('click', AltLog1 );
-    $('#3test3').on('click', AltLog1 );
-    $('#3test5').on('click', AltLog1 );
-    $('#3test6').on('click', AltLog1 );
-    $('#3test7').on('click', AltLog1 );
-    $('#3test8').on('click', AltLog1 );
-    $('#3test9').on('click', AltLog1 );
+    $('#3test1').on('click', AltLog4(InProgress+"1") );
+    $('#3test2').on('click', AltLog4(InProgress+"2") );
+    $('#3test3').on('click', AltLog4(InProgress+"3") );
+    $('#3test4').on('click', AltLog4(InProgress+"4") );
+    $('#3test5').on('click', AltLog4(InProgress+"5") );
+    $('#3test6').on('click', AltLog4(InProgress+"6") );
+    $('#3test7').on('click', AltLog4(InProgress+"7") );
+    $('#3test8').on('click', AltLog4(InProgress+"8") );
+    $('#3test9').on('click', AltLog4(InProgress+"9") );
 }
 
-function AltLog4(){
+function AltLog4(InProgress){
     $('#MainPage').html('');
     var AlternateContent = '';
     AlternateContent += '<table class= "inner">'
@@ -185,16 +189,25 @@ function AltLog4(){
 
     $('#MainPage').html(AlternateContent);
 
-    $('#4test5').on('click', PopulateMenu);
-    $('#4test1').on('click', AltLog1);
-    $('#4test2').on('click', AltLog1);
-    $('#4test3').on('click', AltLog1);
-    $('#4test4').on('click', AltLog1);
-    $('#4test6').on('click', AltLog1);
-    $('#4test7').on('click', AltLog1);
-    $('#4test8').on('click', AltLog1);
-    $('#4test9').on('click', AltLog1);
+    $('#4test1').on('click', ValidateLog(InProgress+"1"));
+    $('#4test2').on('click', ValidateLog(InProgress+"2"));
+    $('#4test3').on('click', ValidateLog(InProgress+"3"));
+    $('#4test4').on('click', ValidateLog(InProgress+"4"));
+    $('#4test5').on('click', ValidateLog(InProgress+"5"));
+    $('#4test6').on('click', ValidateLog(InProgress+"6"));
+    $('#4test7').on('click', ValidateLog(InProgress+"7"));
+    $('#4test8').on('click', ValidateLog(InProgress+"8"));
+    $('#4test9').on('click', ValidateLog(InProgress+"9"));
 }
+function ValidateLog(InProgress){
+    if (InProgress == SECRET_PIN) {
+        PopulateMenu();
+    }
+    else{
+        AltLog1()
+    }
+}
+
 function AltLog5(){
     $('#MainPage').html('');
     var AlternateContent = '';
